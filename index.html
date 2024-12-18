@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Your Candidate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .candidate-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .candidate-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .candidate-card h2 {
+            margin: 0;
+            color: #007bff;
+        }
+
+        .candidate-card p {
+            margin: 5px 0 15px;
+            color: #555;
+        }
+
+        .vote-btn {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .vote-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Candidate</h1>
+        <div class="candidate-list">
+            <div class="candidate-card">
+                <h2>John Doe</h2>
+                <p>Party: Progressive Alliance</p>
+                <button class="vote-btn">Vote</button>
+            </div>
+            <div class="candidate-card">
+                <h2>Jane Smith</h2>
+                <p>Party: People's Voice</p>
+                <button class="vote-btn">Vote</button>
+            </div>
+            <div class="candidate-card">
+                <h2>Michael Brown</h2>
+                <p>Party: Future Forward</p>
+                <button class="vote-btn">Vote</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

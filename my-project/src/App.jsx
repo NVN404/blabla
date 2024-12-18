@@ -143,9 +143,32 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 bg-[url('https://media1.tenor.com/m/hvjyksLFaB4AAAAd/light-light-yagami.gif')]">
-      <h1 className="text-4xl font-bold text-blue-500">Welcome Home!</h1>
-      <p className="text-xl mt-4">You have successfully logged in!</p>
+    <div className="flex flex-col justify-center items-center h-screen bg-gray-100">
+      <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6 text-center">
+        <h1 className="text-2xl font-bold text-gray-800 mb-6">Vote for Your Candidate</h1>
+        <div className="space-y-4">
+          {/* Candidate 1 */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-left">
+            <h2 className="text-lg font-semibold text-blue-600">John Doe</h2>
+            <p className="text-sm text-gray-600 mb-3">Party: Progressive Alliance</p>
+            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Vote</button>
+          </div>
+
+          {/* Candidate 2 */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-left">
+            <h2 className="text-lg font-semibold text-blue-600">Jane Smith</h2>
+            <p className="text-sm text-gray-600 mb-3">Party: People's Voice</p>
+            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Vote</button>
+          </div>
+
+          {/* Candidate 3 */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-left">
+            <h2 className="text-lg font-semibold text-blue-600">Michael Brown</h2>
+            <p className="text-sm text-gray-600 mb-3">Party: Future Forward</p>
+            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Vote</button>
+          </div>
+        </div>
+      </div>
       <button
         className="bg-red-500 text-white px-4 py-2 mt-4"
         onClick={handleLogout}
